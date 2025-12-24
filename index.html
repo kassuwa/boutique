@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Boutique Innovante - Vente de Produits Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- En-tête / Navigation -->
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-rocket"></i> MaBoutique<span class="highlight">Innovante</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#apropos">À Propos</a></li>
+                </ul>
+            </nav>
+            <div class="panier-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="panier-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Bannière -->
+    <section class="banner" id="accueil">
+        <div class="container">
+            <h2>Produits Innovants & Haute Technologie</h2>
+            <p>Motopompes • Portefeuilles connectés • Gadgets Tech • Robinetterie intelligente</p>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section class="produits" id="produits">
+        <div class="container">
+            <h2><i class="fas fa-box-open"></i> Nos Produits</h2>
+            <div class="produits-grid">
+                <!-- PRODUIT 1 -->
+                <div class="produit-card">
+                    <img src="rolex.jpeg">
+                    <h3>Rolex automatique</h3>
+                    <p class="description">Rolex automatique : luxe, précision et élégance réunis dans un mouvement mécanique fiable, symbole de prestige intemporel.</p>
+                    <p class="prix">40000 CFA</p>
+                    <button class="btn-ajouter" data-id="1" data-nom="Motopompe Pro 3000" data-prix="40000">
+                        <i class="fas fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                </div>
+                
+                <!-- PRODUIT 2 -->
+               <div class="produit-card produit-card--carousel">
+    <!-- Conteneur du carrousel d'images -->
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <!-- Slide 1 : Portefeuille Noir -->
+            <div class="carousel-slide active" data-color="Noir">
+                <img src="portefeuille.jpeg" alt="Portefeuille intelligent couleur Noir">
+            </div>
+            <!-- Slide 2 : Portefeuille Marron -->
+            <div class="carousel-slide" data-color="Marron">
+                <img src="portefeuille-1.jpeg" alt="Portefeuille intelligent couleur Marron">
+                
+            </div>
+            <!-- Slide 3 : Portefeuille Bleu -->
+            <div class="carousel-slide" data-color="Bleu">
+                <img src="portefeuille-2.jpeg" alt="Portefeuille intelligent couleur Bleu">
+            </div>
+            <!-- Slide 4 : Portefeuille Bleu -->
+            <div class="carousel-slide" data-color="Bleu">
+                <img src="portefeuille-3.jpeg" alt="Portefeuille intelligent couleur Bleu">
+            
+            </div>
+            <!-- Slide 5 : Portefeuille Bleu -->
+            <div class="carousel-slide" data-color="Bleu">
+                <img src="portefeuille-4.jpeg" alt="Portefeuille intelligent couleur Bleu">
+                
+            </div>
+            <!-- Slide 6 : Portefeuille Bleu -->
+            <div class="carousel-slide" data-color="Bleu">
+                <img src="portefeuille-5.jpeg" alt="Portefeuille intelligent couleur Bleu">
+               
+            </div>
+        </div>
+        
+        <!-- Boutons de navigation -->
+        <button class="carousel-btn carousel-btn--prev">‹</button>
+        <button class="carousel-btn carousel-btn--next">›</button>
+        
+        <!-- Indicateurs de couleur (points) -->
+        <div class="carousel-dots">
+            <button class="carousel-dot active" data-slide="0" aria-label="Voir le portefeuille noir"></button>
+            <button class="carousel-dot" data-slide="1" aria-label="Voir le portefeuille marron"></button>
+            <button class="carousel-dot" data-slide="2" aria-label="Voir le portefeuille bleu"></button>
+            <button class="carousel-dot active" data-slide="3" aria-label="Voir le portefeuille noir"></button>
+            <button class="carousel-dot" data-slide="4" aria-label="Voir le portefeuille marron"></button>
+            <button class="carousel-dot" data-slide="5" aria-label="Voir le portefeuille bleu"></button>
+        </div>
+    </div>
+    
+    <!-- Informations du produit (restent fixes) -->
+    <h3>Portefeuille homme <span id="current-color">(Noir)</span></h3>
+    <p class="description">Portefeuille pour homme au design élégant et compact. 
+        <strong>Couleur actuelle : <span id="current-color-name">Noir</span></strong>
+    </p>
+    <p class="prix">7000 CFA</p>
+    <button class="btn-ajouter" data-id="2" data-nom="Portefeuille homme (Noir)" data-prix="7000">
+        <i class="fas fa-cart-plus"></i> Ajouter au panier (Noir)
+    </button>
+</div>
+                
+                <!-- PRODUIT 3 -->
+                <div class="produit-card">
+                    <img src="earpode.jpeg" alt="Gourde filtrante">
+                    <h3>Earpods KIN KL-66</h3>
+                    <p class="description">EarPods KIN KL-66 au design moderne et compact, délivrant une qualité sonore immersive avec une bonne autonomie. Idéals pour les déplacements, ils combinent praticité, style et performance audio.</p>
+                    <p class="prix">12000 CFA</p>
+                    <button class="btn-ajouter" data-id="3" data-nom="Gourde Filtre Tech" data-prix="12000">
+                        <i class="fas fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                </div>
+                
+                <!-- PRODUIT 4 -->
+                <div class="produit-card">
+                    <img src="watch.jpeg" alt="montre connectee">
+                    <h3>Montre connectée</h3>
+                    <p class="description">Montre connectée au design moderne et épuré, alliant technologie intelligente et élégance. Elle permet de suivre l’activité quotidienne, de recevoir notifications et alertes, tout en offrant confort, performance et style pour un usage au quotidien..</p>
+                    <p class="prix">12000 CFA</p>
+                    <button class="btn-ajouter" data-id="4" data-nom="Montre Intelligente" data-prix="12000">
+                        <i class="fas fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                </div>
+
+                <!-- PRODUIT 5 -->
+                <div class="produit-card">
+                    <img src="earpode1.jpeg" alt="earpods">
+                    <h3>Earpods Q18 CYXG</h3>
+                    <p class="description">EarPods Q18 CYXG avec écran tactile, offrant un contrôle intuitif et un son clair et équilibré. Leur design ergonomique garantit confort et mobilité, tandis que la connectivité sans fil assure une expérience audio fluide pour la musique, les appels et l’usage quotidien.</p>
+                    <p class="prix">15000 CFA</p>
+                    <button class="btn-ajouter" data-id="5" data-nom="Montre Intelligente" data-prix="15000">
+                        <i class="fas fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            
+
+    <!-- Panier Latéral -->
+    <aside class="panier-sidebar" id="panier-sidebar">
+        <div class="panier-header">
+            <h3><i class="fas fa-shopping-cart"></i> Votre Panier</h3>
+            <button class="btn-fermer"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="panier-items" id="panier-items">
+            <!-- Les articles du panier apparaîtront ici dynamiquement -->
+            <p class="panier-vide">Votre panier est vide</p>
+        </div>
+        <div class="panier-footer">
+            <div class="panier-total">
+                <span>Total :</span>
+                <span id="panier-total">0,00 CFA</span>
+            </div>
+            
+            <!-- MODIF IMPORTANTE : Bouton WhatsApp -->
+            <button class="btn-whatsapp" id="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Commander via WhatsApp
+            </button>
+            
+            <p class="instructions">
+                <i class="fas fa-info-circle"></i> Cliquez pour envoyer votre commande directement au vendeur
+            </p>
+        </div>
+    </aside>
+
+    <!-- Overlay pour le panier -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Pied de page -->
+    <footer id="apropos">
+        <div class="container">
+            <h3><i class="fas fa-store"></i> MaBoutiqueInnovante</h3>
+            <p>Vente de produits innovants et technologiques de qualité.</p>
+            <p>Contact admin : <strong id="admin-phone">22799090324</strong></p>
+            <p class="copyright">© 2025 - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
