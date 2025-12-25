@@ -16,7 +16,7 @@ const btnFermer = document.querySelector('.btn-fermer');
 let panier = JSON.parse(localStorage.getItem('panier')) || [];
 
 // Numéro de téléphone de l'administrateur (À MODIFIER AVANT UTILISATION)
-const ADMIN_PHONE = '22799090324'; // Remplacez par VOTRE numéro au format international
+const ADMIN_PHONE = '22784396034'; // Remplacez par VOTRE numéro au format international
 
 // ============================================
 // FONCTIONS DE GESTION DU PANIER (MODIFIÉES)
@@ -350,4 +350,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialisation du carrousel
     initCarousel();
+
 });
