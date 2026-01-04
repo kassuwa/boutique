@@ -352,3 +352,55 @@ document.addEventListener('DOMContentLoaded', () => {
     initCarousel();
 
 });
+
+// ===== COMPTE À REBOURS =====
+document.addEventListener('DOMContentLoaded', function() {
+    function updateCountdown() {
+        const days = document.getElementById('days');
+        const hours = document.getElementById('hours');
+        const minutes = document.getElementById('minutes');
+        const seconds = document.getElementById('seconds');
+
+        let timeLeft = {
+            days: parseInt(days.textContent),
+            hours: parseInt(hours.textContent),
+            minutes: parseInt(minutes.textContent),
+            seconds: parseInt(seconds.textContent)
+        };
+
+        const interval = setInterval(() => {
+            timeLeft.seconds--;
+
+            if (timeLeft.seconds < 0) {
+                timeLeft.seconds = 59;
+                timeLeft.minutes--;
+
+                if (timeLeft.minutes < 0) {
+                    timeLeft.minutes = 59;
+                    timeLeft.hours--;
+
+                    if (timeLeft.hours < 0) {
+                        timeLeft.hours = 23;
+                        timeLeft.days--;
+
+                        if (timeLeft.days < 0) {
+                            clearInterval(interval);
+                            // Optionnel : exécuter une action à la fin du countdown
+                            console.log("L'offre est terminée !");
+                            return;
+                        }
+                    }
+                }
+            }
+
+            // Mettre à jour le HTML
+            days.textContent = timeLeft.days.toString().padStart(2, '0');
+            hours.textContent = timeLeft.hours.toString().padStart(2, '0');
+            minutes.textContent = timeLeft.minutes.toString().padStart(2, '0');
+            seconds.textContent = timeLeft.seconds.toString().padStart(2, '0');
+        }, 1000);
+    }
+
+    // Lancer le compte à rebours
+    updateCountdown();
+});
