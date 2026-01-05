@@ -158,7 +158,7 @@ nav a:hover {
 
 .produit-card img {
     width: 100%;
-    height: 100%;
+    height: 320px;
     object-fit: cover;
 }
 video {
@@ -817,6 +817,7 @@ footer::before {
     height: 320px;
     display: block;
 }
+
 
 
 
