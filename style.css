@@ -806,7 +806,7 @@ footer::before {
 .video-pub {
     width: 100%;
     max-width: 1000px;
-    height: 320px; /* 👈 limite la taille */
+    height: 420px; /* 👈 limite la taille */
     margin: 40px auto;
     border-radius: 16px;
     overflow: hidden;
@@ -819,6 +819,7 @@ footer::before {
     object-fit: cover; /* 👈 coupe proprement */
     display: block;
 }
+
 
 
 
