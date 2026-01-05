@@ -805,18 +805,16 @@ footer::before {
 
 .video-pub {
     width: 100%;
-    max-width: 1000px;
-    height: 800px; /* 👈 limite la taille */
-    margin: 40px auto;
-    border-radius: 16px;
+    max-width: 1200px;
+    margin: 60px auto;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
 .video-pub video {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* 👈 coupe proprement */
+    height: auto;
     display: block;
 }
 
