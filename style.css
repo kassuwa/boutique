@@ -817,14 +817,26 @@ footer::before {
     height: 320px;
     display: block;
 }
+.nav-whatsapp a {
+    background-color: #25D366;
+    color: white !important;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
 
+.nav-whatsapp a:hover {
+    background-color: #1da851;
+    transform: translateY(-2px);
+}
 
-
-
-
-
-
-
+.nav-whatsapp i {
+    font-size: 1.2rem;
+}
 
 
 
